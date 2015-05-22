@@ -1,0 +1,25 @@
+# we don't want to accidentally commit an old version of the api
+src/main/java/extrabiomes/lib
+
+*.class
+
+/.nb-gradle/
+/.gradle
+/.nb-gradle-properties
+
+/build/
+/classes/
+/output/
+debug/
+
+/javadocs/
+*-javadoc/
+
+/eclipse/
+/.classpath
+/.project
+/.settings/
+
+/.idea/
+*.iml
+/bin/
