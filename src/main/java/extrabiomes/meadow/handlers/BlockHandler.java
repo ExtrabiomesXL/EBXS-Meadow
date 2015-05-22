@@ -31,7 +31,7 @@ public abstract class BlockHandler {
         GameRegistry.registerWorldGenerator(gen, 50);
 		
 		final BlockExtraFlower block = new BlockExtraFlower();
-		GameRegistry.registerBlock(block, ExtraItem.class, "flower");
+		GameRegistry.registerBlock(block, ExtraItem.class, "meadow.flower");
 		
 		for( BlockExtraFlower.BlockType type : BlockExtraFlower.BlockType.values() ) {
 			meadowBiome.addFlower(block, type.metadata, type.weight);
