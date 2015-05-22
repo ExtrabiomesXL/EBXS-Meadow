@@ -1,0 +1,18 @@
+item.extrabiomes.meadow.crop.strawberry.name=Strawberry
+tile.extrabiomes.meadow.crop.strawberry.name=Strawberries
+item.extrabiomes.meadow.seed.strawberry.name=Strawberry Seeds
+
+item.extrabiomes.meadow.food.chocolate.name=Chocolate
+item.extrabiomes.meadow.food.chocolate_strawberry.name=Chocolate Covered Strawberry
+
+tile.extrabiomes.meadow.flower.0.name=Hydrangea
+tile.extrabiomes.meadow.flower.1.name=Buttercup
+tile.extrabiomes.meadow.flower.2.name=Bachelor's Button
+tile.extrabiomes.meadow.flower.3.name=Daisy
+tile.extrabiomes.meadow.flower.4.name=Dandelion
+tile.extrabiomes.meadow.flower.5.name=Orange Gerbera
+tile.extrabiomes.meadow.flower.6.name=Pink Gerbera
+tile.extrabiomes.meadow.flower.7.name=Red Gerbera
+tile.extrabiomes.meadow.flower.8.name=Yellow Gerbera
+tile.extrabiomes.meadow.flower.9.name=Yarrow
+

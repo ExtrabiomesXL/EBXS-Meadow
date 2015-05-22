@@ -1,0 +1,16 @@
+[
+{
+  "modid": "ExtrabiomesMeadow",
+  "name": "Extrabiomes Meadow",
+  "description": "Meadow biome and everything that comes with it.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://extrabiomes.com/core",
+  "updateUrl": "",
+  "authorList": ["allaryin"],
+  "credits": "Extrabiomes Team",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": ["ExtrabiomesCore"]
+}
+]
