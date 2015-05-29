@@ -17,9 +17,8 @@ public class BiomeMeadow extends ExtrabiomeGenBase {
 
 	public BiomeMeadow() {
 		super(BiomeCollection.MEADOW.settings, Type.PLAINS);
-		//setColor(0xF29C11);
 		setBiomeName("Meadow");
-		setHeight(new Height(0.1F, 0.03125F));
+		setHeight(ExtrabiomeGenBase.height_FlatPlains);
 		
 		this.temperature = BiomeGenBase.plains.temperature;
 		this.rainfall = BiomeGenBase.plains.rainfall;
