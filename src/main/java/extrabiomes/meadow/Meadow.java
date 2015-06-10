@@ -46,7 +46,7 @@ public class Meadow extends ModBase implements IEBXSSubMod
         BlockCollection.init();
         ConfigurationHandler.init(Config);
         
-        BiomeUtils.register(this, Const.API_VERSION);
+        BiomeUtils.register(this, Version.API_VERSION);
     }
     
     public void ebxsPreInit() {
@@ -58,7 +58,7 @@ public class Meadow extends ModBase implements IEBXSSubMod
     
     public void ebxsInit() {
     	super.ebxsInit();
-    	LOGGER.info("Loaded version %s, API version %s", Version.VERSION, Const.API_VERSION);
+    	LOGGER.info("Loaded version %s, API version %s", Version.VERSION, Version.API_VERSION);
     	proxy.registerRenderInformation();
     }
     
