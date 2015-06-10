@@ -55,6 +55,21 @@ public class BlockMeadowFlower extends BlockExtraFlower {
 			icon = iconRegister.registerIcon(Version.TEXTURE_PATH + this.texture);
 			return icon;
 		}
+
+		@Override
+		public int getMeta() {
+			return metadata;
+		}
+
+		@Override
+		public int getWeight() {
+			return weight;
+		}
+
+		@Override
+		public int getColor() {
+			return color;
+		}
 	}
 	
 	// NB: may need to switch to a generic block manually implementing IPlantable
