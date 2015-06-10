@@ -14,7 +14,7 @@ import extrabiomes.lib.worldgen.ExtraWorldGenerator;
 import extrabiomes.lib.worldgen.ExtrabiomeGenBase;
 import extrabiomes.lib.worldgen.WorldGenDecoration;
 import extrabiomes.lib.worldgen.WorldGenWildflower;
-import extrabiomes.meadow.blocks.BlockExtraFlower;
+import extrabiomes.meadow.blocks.BlockMeadowFlower;
 import extrabiomes.meadow.stuff.BiomeCollection;
 import extrabiomes.meadow.stuff.BlockCollection;
 
@@ -37,11 +37,11 @@ public abstract class BlockHandler {
 		gen.registerBiome(meadowSettings);
         GameRegistry.registerWorldGenerator(gen, 20);
 		
-		final BlockExtraFlower block = new BlockExtraFlower();
+		final BlockMeadowFlower block = new BlockMeadowFlower();
 		GameRegistry.registerBlock(block, ExtraItem.class, "meadow.flower");
 		
 		List<ItemStack> flowerStacks = Lists.newArrayList();
-		for( BlockExtraFlower.BlockType type : BlockExtraFlower.BlockType.values() ) {
+		for( BlockMeadowFlower.BlockType type : BlockMeadowFlower.BlockType.values() ) {
 			meadowBiome.addFlower(block, type.metadata, type.weight);
 			flowerStacks.add(new ItemStack(block, 1, type.metadata));
 		}
