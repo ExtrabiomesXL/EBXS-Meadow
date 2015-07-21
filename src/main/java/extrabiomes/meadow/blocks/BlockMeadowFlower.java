@@ -1,22 +1,10 @@
 package extrabiomes.meadow.blocks;
 
-import java.util.List;
-import java.util.Locale;
-
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockFlower;
-import net.minecraft.client.renderer.texture.IIconRegister;
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import extrabiomes.meadow.Meadow;
-import extrabiomes.meadow.Version;
 import extrabiomes.lib.blocks.BlockExtraFlower;
 import extrabiomes.lib.blocks.IBlockTypeFlower;
-import extrabiomes.lib.blocks.IExtraBlock;
+import extrabiomes.meadow.Meadow;
+import extrabiomes.meadow.Version;
 
 public class BlockMeadowFlower extends BlockExtraFlower {
 
@@ -48,12 +36,9 @@ public class BlockMeadowFlower extends BlockExtraFlower {
 		private IIcon icon;
 		public IIcon getIcon() {
 			return icon;
-		}
-		
-		@SideOnly(Side.CLIENT)
-		public IIcon registerIcon(IIconRegister iconRegister) {
-			icon = iconRegister.registerIcon(Version.TEXTURE_PATH + this.texture);
-			return icon;
+		}		
+		public void setIcon(IIcon icon) {
+			this.icon = icon;
 		}
 
 		@Override
@@ -69,6 +54,11 @@ public class BlockMeadowFlower extends BlockExtraFlower {
 		@Override
 		public int getColor() {
 			return color;
+		}
+		
+		@Override
+		public String getTexture() {
+			return texture;
 		}
 	}
 	

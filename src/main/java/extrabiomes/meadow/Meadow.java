@@ -2,6 +2,9 @@ package extrabiomes.meadow;
 
 import java.util.List;
 
+import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
+
 import com.google.common.collect.ImmutableList;
 
 import cpw.mods.fml.common.IWorldGenerator;
@@ -10,6 +13,8 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import extrabiomes.lib.BiomeUtils;
 import extrabiomes.lib.Const;
 import extrabiomes.lib.IEBXSSubMod;
@@ -75,4 +80,11 @@ public class Meadow extends ModBase implements IEBXSSubMod
 	public List<Class<? extends IWorldGenerator>> getWorldGenerators() {
 		return worldGens;
 	}
+	
+	@SideOnly(Side.CLIENT)
+	public IIcon registerIcon(IIconRegister iconRegister, String texture) {
+		IIcon icon = iconRegister.registerIcon(Version.TEXTURE_PATH + texture);
+		return icon;
+	}
+
 }
