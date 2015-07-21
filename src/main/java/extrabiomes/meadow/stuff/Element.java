@@ -6,6 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.item.ItemStack;
 
 public enum Element {
+	PLANT_STRAWBERRY,
 	CROP_STRAWBERRY,
 	SEED_STRAWBERRY,
 	FOOD_CHOCOLATE,
