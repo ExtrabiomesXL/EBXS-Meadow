@@ -1,2 +1,3 @@
-# forge-mod-template
-A basic template for a Minecraft Forge mod.
+# Extrabiomes Meadow
+
+Adds the Meadow biome and associated plants. Requires EBXS-Core to function.
